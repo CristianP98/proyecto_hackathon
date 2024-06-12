@@ -1,0 +1,14 @@
+Recordar que para implementar HTML en el Django tengo que ir a:
+
+views.py
+
+crear una funcion:
+
+def <nombre de la funcion>(request)
+	return render( request, '<nombre del archivo del html>')
+
+url.py
+
+En la parte de urlpatterns añadir:
+path( ' ', <nombre la funcion>, <un nombre x>, <'funcion'>),
+
